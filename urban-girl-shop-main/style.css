@@ -789,3 +789,94 @@ footer a {
   #main.show {
     opacity: 1;
   }
+
+/* ============================= */
+/* 📱 DISEÑO RESPONSIVO MÓVIL */
+/* ============================= */
+
+@media (max-width: 768px) {
+
+  /* HEADER */
+  .main-header {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .main-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .cart-button {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* HERO */
+  .hero-banner {
+    padding: 20px;
+    text-align: center;
+  }
+
+  /* GRID DE PRODUCTOS */
+  .product-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* UNA COLUMNA */
+    gap: 20px;
+  }
+
+  .product-card {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .product-card img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* BOTONES */
+  .add-to-cart {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+  }
+
+  /* TEXTO */
+  h2 {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  h4 {
+    font-size: 1.1rem;
+  }
+
+  /* STOCK / RESERVAS / TIMER */
+  .stock-info,
+  .reserved-info,
+  .timer {
+    font-size: 0.85rem;
+    text-align: center;
+  }
+
+  /* FOOTER */
+  footer {
+    text-align: center;
+    padding: 15px;
+  }
+}
+
+/* EXTRA: teléfonos muy pequeños */
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  .hero-banner h2 {
+    font-size: 1.2rem;
+  }
+}
